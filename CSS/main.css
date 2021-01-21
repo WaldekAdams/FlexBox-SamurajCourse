@@ -5,4 +5,43 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #4a4ad6;
+}
+
+.logo {
+  background-color: lightsalmon;
+}
+
+.search {
+  background-color: #31942d;
+}
+
+.settings {
+  background-color: #31332c;
+}
+
+.menu {
+  background-color: #2db3d4;
+}
+
+.main-articles {
+  background-color: #ce3636;
+}
+
+.article-list {
+  background-color: #17bd4e;
+}
+
+.footer {
+  background-color: #ee6910;
+}
 /*# sourceMappingURL=main.css.map */
