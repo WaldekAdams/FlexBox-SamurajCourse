@@ -6,6 +6,11 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+  font-family: "arial", "san-serif";
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,29 +24,49 @@
 
 .logo {
   background-color: lightsalmon;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  padding: 10px;
+}
+
+.logo__img {
+  width: 20%;
 }
 
 .search {
   background-color: #31942d;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .settings {
   background-color: #31332c;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
 .menu {
   background-color: #2db3d4;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .main-articles {
   background-color: #ce3636;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .article-list {
   background-color: #17bd4e;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .footer {
   background-color: #ee6910;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 /*# sourceMappingURL=main.css.map */
