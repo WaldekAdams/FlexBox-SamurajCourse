@@ -35,9 +35,43 @@ html {
 
 .search {
   background-color: #31942d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search__input {
+  height: 35%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 15px;
+  padding-left: 1rem;
+}
+
+.search__input:focus {
+  -webkit-box-shadow: 0 0 5px 2px #1b1818;
+          box-shadow: 0 0 5px 2px #1b1818;
+}
+
+.search__btn {
+  height: 40%;
+  width: 15%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #dad3d3;
+  -webkit-box-shadow: 0 0 4px 1px #1b1818;
+          box-shadow: 0 0 4px 1px #1b1818;
 }
 
 .settings {
