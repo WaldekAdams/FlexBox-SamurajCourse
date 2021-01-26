@@ -11,10 +11,13 @@
 html {
     font-size: 10px;
     font-family: $default-font;
+    background-color: white;
     // min-height: 100vh;
 }
 
 .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     // background-color: $main-color;
@@ -26,6 +29,7 @@ html {
     flex-basis: 15%;
     padding: 10px;
     font-size: 5rem;
+    background-color: #F1DEDE;
 
     &__img {
         width: 20%;
@@ -39,6 +43,7 @@ html {
     flex-grow: 1;
     align-items: center;
     justify-content: center;
+    background-color: #F1DEDE;
 
     &__input {
         height: 35%;
@@ -80,6 +85,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F1DEDE;
 
     &__link-icon {
         font-size: 4rem;
@@ -94,13 +100,14 @@ html {
 
 
 .menu {
-    background-color: rgb(104, 156, 235);
+    background-color: lighten($color: black, $amount: 10%);
     flex-basis: 100%;
     height: 100px;
     padding: 20px 40px;
 
     &__list {
         display: flex;
+
 
     }
 
@@ -113,15 +120,16 @@ html {
 
 
 
+
         &:nth-last-child(1) {
             margin-left: auto;
             padding: 2px 12px;
             border: 1px solid black;
-            box-shadow: 0 0 2px 1px black;
+            box-shadow: 0 0 2px 1px rgb(71, 71, 71);
 
             &:hover {
-                border: 1px solid darkorange;
-                box-shadow: 0 0 2px 1px darkorange;
+                border: 1px solid #FFF275;
+                box-shadow: 0 0 2px 1px #FFF275;
 
             }
 
@@ -136,9 +144,10 @@ html {
         text-transform: uppercase;
         font-family: $extra-fonts;
         line-height: 30px;
+        color: white;
 
         &:hover {
-            border-bottom: 2px solid darkorange;
+            border-bottom: 2px solid #FFF275;
         }
 
         &--last:hover {
@@ -161,8 +170,27 @@ html {
 
 
 .main-articles {
-    background-color: rgb(206, 54, 54);
+    background-color: #5171A5;
     flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__head {
+        margin: 40px 0;
+        font-size: 4.4rem;
+        font-family: $extra-fonts;
+        letter-spacing: 2px;
+        color: whitesmoke;
+        text-align: center;
+        flex-basis: 100%;
+        background-color: rgba(0, 0, 0, 0.2)
+    }
+
+    .article {
+        flex-basis: 50%;
+        padding: 0 30px;
+        text-align: center;
+    }
 }
 
 .article-list {
