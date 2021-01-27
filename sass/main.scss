@@ -179,7 +179,8 @@ html {
         margin: 40px 0;
         font-size: 4.4rem;
         font-family: $extra-fonts;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
         color: whitesmoke;
         text-align: center;
         flex-basis: 100%;
@@ -187,9 +188,38 @@ html {
     }
 
     .article {
+        margin-top: 50px;
         flex-basis: 50%;
-        padding: 0 30px;
+        padding: 0 40px;
         text-align: center;
+
+        &__img {
+            width: 70%;
+        }
+
+        &__title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin: 2.5rem 0;
+            font-family: $extra-fonts;
+        }
+
+        &__description {
+            font-size: 1.8rem;
+            min-height: 100px;
+            line-height: 2.6rem;
+
+        }
+
+        &__link {
+            display: block;
+            width: 25%;
+            margin: 40px auto;
+            color: white;
+            padding: 10px 15px;
+            border: 1px solid black;
+            ;
+        }
     }
 }
 
