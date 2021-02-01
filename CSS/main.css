@@ -196,7 +196,14 @@ html {
   font-size: 2.4rem;
   line-height: 6rem;
   margin: 0;
-  background-color: #5171A5;
+  background-color: #a3b5d2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.article--small .article__title:hover {
+  background-color: #FFF275;
+  cursor: pointer;
 }
 
 .article__description {
@@ -256,7 +263,7 @@ html {
 
 .article-list {
   background-color: white;
-  padding: 50px 0 0;
+  padding: 50px 0 20px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -270,8 +277,39 @@ html {
 }
 
 .footer {
-  background-color: #ee6910;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 3rem 0;
+  border-top: 1px solid #000;
+  background-color: #5171A5;
+}
+
+.footer .sm-column {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.sm-column {
+  text-align: center;
+  font-family: "PT Sans", "Roboto";
+}
+
+.sm-column__title {
+  font-family: "arial", "san-serif";
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+}
+
+.sm-column__item {
+  line-height: 2.8rem;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */
