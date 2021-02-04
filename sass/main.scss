@@ -32,6 +32,10 @@ html {
     font-size: 5rem;
     background-color: #F1DEDE;
 
+    @media(max-width:799px) {
+        font-size: 4rem;
+    }
+
     &__img {
         width: 20%;
 
@@ -46,12 +50,23 @@ html {
     justify-content: center;
     background-color: #F1DEDE;
 
+    @media(max-width:799px) {
+        background-color: darken($color: #F1DEDE, $amount: 15%);
+        order: -1;
+        flex-basis: 100%;
+        min-height: 7vh;
+    }
+
     &__input {
         height: 35%;
         max-height: 60px;
         flex-basis: 50%;
         margin-right: 2vh;
         padding-left: 1rem;
+
+        @media(max-width:799px) {
+            height: 55%;
+        }
 
         &:focus {
             box-shadow: 0 0 5px 2px rgb(27, 24, 24);
@@ -70,6 +85,10 @@ html {
         box-shadow: 0 0 4px 1px rgb(27, 24, 24);
         transition: 0.3s;
 
+        @media(max-width:799px) {
+            height: 60%;
+        }
+
         &:hover {
             background-color: #000;
             color: white;
@@ -87,9 +106,15 @@ html {
     align-items: center;
     justify-content: center;
     background-color: #F1DEDE;
+    font-size: 4rem;
+
+    @media(max-width:799px) {
+        flex-grow: 1;
+        justify-content: flex-end;
+        font-size: 3.2rem;
+    }
 
     &__link-icon {
-        font-size: 4rem;
         color: rgb(70, 67, 67);
         margin: 0 1.5rem;
 
@@ -106,6 +131,10 @@ html {
     height: 90px;
     padding: 20px 40px;
 
+    @media(max-width:799px) {
+        padding: 20px 20px;
+    }
+
     &__list {
         display: flex;
 
@@ -118,12 +147,17 @@ html {
         list-style: none;
         margin-right: 50px;
 
+        @media(max-width:799px) {
+            font-size: 2.5rem;
+        }
+
 
 
 
 
         &:nth-last-child(1) {
             margin-left: auto;
+            margin-right: 0;
             padding: 2px 12px;
             border: 1px solid black;
             box-shadow: 0 0 2px 1px rgb(71, 71, 71);
@@ -175,6 +209,10 @@ html {
 
     &--small {
         flex-basis: 30%;
+
+        @media(max-width:799px) {
+            flex-basis: 50%;
+        }
 
 
     }
@@ -256,6 +294,10 @@ html {
 
     .article {
         flex-basis: 50%;
+
+        @media(max-width:799px) {
+            flex-basis: 100%;
+        }
     }
 }
 
